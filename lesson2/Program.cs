@@ -78,6 +78,10 @@ else {
 }
 
 bool checkDay(int dayOfWeek) {
+    if (dayOfWeek > 7 || dayOfWeek < 1) {
+        Console.WriteLine("Are you from Mars ?");
+        return false;
+    }
     switch (dayOfWeek) {
         case 6: 
         case 7:
